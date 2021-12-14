@@ -1,0 +1,164 @@
+% Footer Formatting: DO NOT CHANGE -----------------------------------
+% Setting the page numbers to be arabic 
+\pagenumbering{arabic}
+
+\fancyfoot{}
+
+\fancyfoot[LE]{\colorbox{urban-footergray}{\makebox(0.2, 0.12)[r]{\fontsize{7.5}{0}\selectfont\bfseries{\MakeUppercase{}\hspace{0.2in}}}}\colorbox{urban-gold}{\makebox(0.2, 0.12)[c]{\fontsize{7.5}{0}\selectfont\bfseries{\MakeUppercase\thepage}}}\colorbox{urban-footergray}{\makebox(5.64, 0.12)[r]{\fontsize{7.5}{0}\selectfont\bfseries{\MakeUppercase{\textls{\THETITLE}}\hspace{0.2in}}}}}
+
+\fancyfoot[RO]{\colorbox{urban-footergray}{\makebox(5.64, 0.12)[l]{\fontsize{7.5}{0}\selectfont\bfseries{\hspace{0.2in}\MakeUppercase{\textls{\THETITLE}}}}}\colorbox{urban-gold}{\makebox(0.2, 0.12)[c]{\fontsize{7.5}{0}\selectfont\bfseries{\MakeUppercase\thepage}}}\colorbox{urban-footergray}{\makebox(0.2, 0.12)[r]{\fontsize{7.5}{0}\selectfont\bfseries{\MakeUppercase{}\hspace{0.2in}}}}}
+% Footer Formatting: DO NOT CHANGE -----------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Report %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Report headers examples -----------------------------------
+\part{Report Title Here in Title Case (Heading 1 style)}
+Body Text style for first paragraph.
+
+Body Text First Indent style for subsequent paragraphs. \textcolor{red}{To add an endnote, use the Insert Endnote function. Endnotes will automatically appear in the Notes section after the appendixes.}\endnote{Endnotes inserted in the executive summary, main report, and appendixes will all display here if section breaks are used correctly.} 
+
+\section{First-Level Heading in Title Case (Heading 2 style)}
+
+Body Text style for first paragraph under a heading.
+
+Body Text First Indent style for all subsequent paragraphs.
+% Bullet examples -----------------------------------
+\begin{itemize}
+    \item Bulleted List style for bulleted lists.
+    \item Another bullet using Bulleted List style.
+    \begin{itemize}
+        \item Bulleted List 2 style for second-level bulleted items under a numbered or bulleted list item.
+        \item Another item using Bulleted List 2 style.
+    \end{itemize}
+    \item Another bullet using Bulleted List style.\\
+    Indented Text style for ordinary paragraphs under a numbered or bulleted list item.
+\end{itemize}
+
+\noindent Body Text First Indent style for all subsequent paragraphs.
+
+\begin{enumerate}
+    \item Numbered List style for numbered lists
+    \begin{enumerate}
+        \item Numbered List 2 style for second-level lettered items under a numbered or bulleted list item.
+        \item Another paragraph using Numbered List 2 style.
+    \end{enumerate}
+    \item Another item using Numbered List style.\\
+    Indented Text style for ordinary paragraphs under a numbered or bulleted list item.
+\end{enumerate}
+
+\noindent Body Text First Indent style for all subsequent paragraphs.
+
+\newpage
+\subsection{Second-Level Heading in Title Case (Heading 3 style)}
+
+\indent Body Text style for first paragraph under a heading.
+
+\subsubsection{Third-level heading; all caps is built into style (heading 4 style)}
+
+Body Text style for first paragraph under a heading.
+
+\fourthsub{Fourth-level headings are run into the text.} Select the first clause or sentence of your paragraph, then apply the Heading 5 (D) style. 
+
+% Quote examples -----------------------------------
+\prequotebar
+
+\pullquote{Pull Quote style for pull quotes.\\
+---Pull quote attribution in sentence case}
+
+\postquotebar
+
+Body Text First Indent style for all subsequent paragraphs.
+
+\block{Block Text style for longer (100+ words) quotes and excerpts.}
+
+\preboxbar
+
+\boxhead{Box 1 (Box Number Style)}
+
+\boxtitle{Box Title in Title Case (Box Title style)}
+
+Box Body Text for first paragraph.
+Box Body Text First Indent for all subsequent paragraphs.
+\begin{itemize}
+    \item Box Bulleted List style for lists within boxes
+    \item Another item using Box Bulleted List style
+\end{itemize}
+\indent Box Body Text First Indent for all subsequent paragraphs.
+
+\boxnote{Box Note style for sources and notes. Change “Source:” to bold. If your box doesn’t have notes, use Box Body Text Last style to add the gray border.}
+
+
+\postboxbar
+
+% Figures and Tables examples -----------------------------------
+\newpage
+\part{Figures and Tables}
+
+\begin{figure}[htbp]
+    \caption{
+    \textbf{Title in Title Case (Figure/Table Title style)}\\
+    \textit{Subtitle or explainer in sentence case (Figure/Table Subtitle style)}
+    }
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/logo.png}
+    \label{fig:my_label}
+\end{figure}
+\begin{singlespace}
+    \source{\textbf{Source:} Figure/Table Notes style. Source in sentence case, except proper nouns. Change ``Source:'' to bold.}\\
+    \source{\textbf{Notes:} Figure/Table Notes style. Notes in sentences (and sentence case). Change ``Notes:'' to bold.}
+\end{singlespace}
+
+% Tables get tricky in LaTeX, because you have to specify each row and column.
+% These two examples mirror the Urban Report Word Doc.
+% Some ways to make LaTeX table without much work:
+% 1. Use xtable in R to generate the LaTeX code for a table you generated in R.
+% 2. https://www.tablesgenerator.com/, a LaTeX table generator
+
+\begin{singlespace}
+    \begin{table}[htbp]
+        \def\arraystretch{1.3}
+        \caption{
+        \textbf{Title in Title Case (Figure/Table Title style)}\\
+        \textit{Subtitle or explainer in sentence case (Figure/Table Subtitle style)}
+        }
+        \label{tab:my_label}
+        \centering
+        \begin{tabular}{L{0.20\textwidth} C{0.20\textwidth} C{0.20\textwidth} C{0.20\textwidth} C{0.20\textwidth}}
+                & \multicolumn{2}{C{0.38\textwidth}}{\tabheader{Spanner Heading in Title Case (Table Column Heading Style)}} & \multicolumn{2}{C{0.38\textwidth}}{\tabheader{Spanner Heading in Title Case (Table Column Heading Style)}}\\
+            \hline
+                & \tabheader{Column labels in sentence case (Table Column Heading style)} & \tabheader{Column labels in sentence case (Table Column Heading style)} & \tabheader{Column labels in sentence case (Table Column Heading style)} &  \tabheader{Column labels in sentence case (Table Column Heading style)}\\
+            \hline
+                \rowheader{Table row heading in sentence case (Table Row Heading style)} &  &  &  &  \\ 
+                \rowsubheader{Table subheading in sentence case (Table Row Subheading style)} &  &  &  &  \\ 
+                \tabfont{Table row in sentence case (Table Row style)} &  &  &  &  \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \source{\textbf{Source:} Figure/Table Notes style. Source in sentence case, except proper nouns. Change ``Source:'' to bold.}\\
+    \source{\textbf{Notes:} Figure/Table Notes style. Notes in sentences (and sentence case). Change ``Notes:'' to bold.}
+\end{singlespace}
+
+% Reference examples -----------------------------------
+\newpage
+\part{Reference Styles}
+See some examples printed out in the References section.
+
+\section{Research Articles}
+\begin{itemize}
+    \item \textbf{Single Author:}
+    \citet{bowen2018data}
+    \item \textbf{Two Authors:}
+    \citet{bowen1728philosophy}
+    \item \textbf{More than Two Authors:} \citet{barrientos2021feasibility}
+\end{itemize}
+
+\section{Books}
+
+\begin{itemize}
+    \item \textbf{Single Author Book:} \citet{schwabish2020elevate}
+    \item \textbf{Multiple Authors:} \citet{burman2020taxes}
+    \item \textbf{Urban Published Book:}
+    \citet{cordes2009nonprofits}
+    \item \textbf{One volume in multi-volume work:} \citet{bowen2021book}
+\end{itemize}
+

@@ -1,0 +1,70 @@
+% urban-white-paper.tex
+% v1.0 Dec. 2021
+
+\documentclass{urban-formatting}
+
+% Font and Font Weight
+\usepackage[T1]{fontenc}
+
+% Setting the references list
+\bibliography{references}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+    \begin{center}
+        \titlereport{Title Here in Title Case}
+    
+        \vspace{-0.25in}
+        
+        \reportsubtitle{Subtitle Here in Title Case}
+        
+        \authorfont{Author 1 Name, followed by a line break}\\
+        \authorfont{Author’s affiliation}
+        
+        \authorfont{Author 1 Name, followed by a line break}\\
+        \authorfont{Author’s affiliation}
+        
+        \authorfont{Author 1 Name, followed by a line break}\\
+        \authorfont{Author’s affiliation}
+        
+        \authorfont{Author 1 Name, followed by a line break}\\
+        \authorfont{Author’s affiliation}
+        
+        \textit{with Name Here and Name Here (Authors style)}
+        
+        \textit{Month and Year (Date Style)}
+
+    \end{center}
+    \vfill
+    \titlefooter{The authors welcome feedback on this working paper. Please send all inquiries to \textcolor{urban-url}{author1emailaddress@urban.org.}}
+    
+    \titlefooter{\tbf{Add any acknowledgments to reviewer (and funders, if applicable) here. If the text has been submitted to a journal, list that information here as well.}}
+    
+    \titlefooter{Urban Institute working papers are circulated for discussion purposes. Though they may have been peer reviewed, they have not been formally edited by the Department of Editorial Services and Publications.}
+    
+    \titlefooter{Copyright © \tbf{Month Year. Author name(s)}. All rights reserved.}
+    \vspace{1.5in}
+
+    % Add logo
+    \begin{textblock*}{4.5in}[1, 1](5.5in, 10.5in)
+        \noindent\includegraphics[width=2in]{images/logo-bw.jpg}
+    \end{textblock*}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Front Matter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{frontmatter/abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Main Text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Back Matter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{backmatter/appendix}
+
+\include{backmatter/references}
+
+\end{document}

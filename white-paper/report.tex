@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Report %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Suppressing Page Number
+\pagenumbering{gobble}
+
+% Report headers examples -----------------------------------
+\part{First Level Heading in Title Case (Heading 1 style)}
+Body Text for first paragraph under headings.
+
+Body Text First Indent for subsequent paragraphs.
+
+\section{Second-Level Heading in Title Case (Heading 2 style)}
+
+Body Text style for first paragraph under a heading.
+
+Body Text First Indent style for all subsequent paragraphs.
+
+% Bullet examples -----------------------------------
+\begin{itemize}
+    \item Bulleted List style for bulleted lists.
+    \item Another bullet using Bulleted List style.
+    \begin{itemize}
+        \item Bulleted List 2 style for second-level bullets under a numbered or bulleted list item.
+        \item Another sub-bullet using Bulleted List 2 style.
+    \end{itemize}
+    Body Text First Indent. 
+\end{itemize}
+
+Body Text First Indent style for all subsequent paragraphs.
+
+\begin{enumerate}
+    \item Numbered List style for numbered lists.
+    Indented Text style for a paragraph under a numbered or bulleted list item. 
+    \item Another list item using Numbered List style.
+    Another paragraph using Indented Text style.
+\end{enumerate}
+
+\section{Another Second-Level Heading (Heading 2 style)}
+Body Text.
+
+\subsection{Third-Level Heading in Title Case (Heading 3 style)}
+Body Text.
+
+Body Text First Indent.
+
+\subsubsection{Fourth-Level Heading in Title Case (Heading 4 style)}
+Body Text.
+
+Body Text First Indent.
+
+\fourthsub{Heading 5 applied to first sentence/words in paragraph; sentence case.}
+
+\noindent Body Text for rest of paragraph.
+
+Body Text First Indent. 
+
+Body Text First Indent. 
+
+\quoteblock{Block Text style for longer (100+ words) quotes and excerpts.}
+
+Body Text First Indent.
+
+Body Text First Indent.
+
+Body Text First Indent.
+
+% Figures and Tables examples -----------------------------------
+\newpage
+\part{Figures and Tables}
+
+\begin{figure}[htbp]
+    \caption{
+    \textbf{Title in Title Case (Figure/Table Title style)}\\
+    \textit{Subtitle or Explainer (Figure/Table Subtitle style)}
+    }
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/logo-bw.jpg}
+    \label{fig:my_label}
+\end{figure}
+\begin{singlespace}
+    \source{\textbf{Source:} Figure/Table Notes style.}\\
+    \source{\textbf{Notes:} Figure/Table Notes style. }
+\end{singlespace}
+
+% Tables get tricky in LaTeX, because you have to specify each row and column.
+% These two examples mirror the Urban Report Word Doc.
+% Some ways to make LaTeX table without much work:
+% 1. Use xtable in R to generate the LaTeX code for a table you generated in R.
+% 2. https://www.tablesgenerator.com/, a LaTeX table generator
+
+\vspace{0.5in}
+\begin{singlespace}
+    \begin{table}[htbp]
+        \def\arraystretch{1.2}
+        \caption{
+        \textbf{Title in Title Case (Figure/Table Title style)}\\
+        \textit{Subtitle or Explainer (Figure/Table Subtitle style)}
+        }
+        \label{tab:my_label}
+        \centering
+        \begin{tabular}{L{0.2\textwidth} C{0.2\textwidth} C{0.2\textwidth} C{0.2\textwidth} C{0.2\textwidth}}
+                & \multicolumn{2}{C{0.4\textwidth}}{\tabheader{Spanner Heading in Title Case}} & \multicolumn{2}{C{0.4\textwidth}}{\tabheader{Spanner Heading in Title Case}}\\
+            \hline
+                & \tabheader{Column labels in sentence case} & \tabheader{Column labels in sentence case} & \tabheader{Column labels in sentence case} &  \tabheader{Column labels in sentence case}\\
+            \hline
+                \rowheader{Table row heading in sentence case (Table Row Heading style)} &  &  &  &  \\ 
+                \rowsubheader{Table subheading in sentence case (Table Row Subheading style)} &  &  &  &  \\ 
+                \tabfont{Table row in sentence case (Table Row style)} &  &  &  &  \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \source{\textbf{Source:} Figure/Table Notes style.}\\
+    \source{\textbf{Notes:} Figure/Table Notes style. }
+\end{singlespace}
+
+% Reference examples -----------------------------------
+\newpage
+\part{Reference Styles}
+See some examples printed out in the References section.
+
+\section{Research Articles}
+\begin{itemize}
+    \item \textbf{Single Author:}
+    \citet{bowen2018data}
+    \item \textbf{Two Authors:}
+    \citet{bowen1728philosophy}
+    \item \textbf{More than Two Authors:} \citet{barrientos2021feasibility}
+\end{itemize}
+
+\section{Books}
+
+\begin{itemize}
+    \item \textbf{Single Author Book:} \citet{schwabish2020elevate}
+    \item \textbf{Multiple Authors:} \citet{burman2020taxes}
+    \item \textbf{Urban Published Book:}
+    \citet{cordes2009nonprofits}
+    \item \textbf{One volume in multi-volume work:} \citet{bowen2021book}
+\end{itemize}
