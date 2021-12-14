@@ -9,6 +9,8 @@ This repository is for the LaTeX files that are in the Urban approved format.
 * How to Guides (to be added)
 
 ## Original Seed Grant Proposal
+**Team:** Alexandra Tammaro (COMMS) and Claire McKay Bowen (LHP)
+
 - **Motivation:** When creating Urban reports in Word, copyeditors spend a lot of time to ensure the correct document style, text formatting, table structures, figure placements, and references are used. For highly technical, heavily referenced papers, Word can be cumbersome, quickly becoming unwieldy and elongating timelines.
 - **Objective:** We propose to create Urban formatting in LaTeX, an open-source software system for various documentation, which is widely used in academia for communication and publication of scientific documents.
 - **Target audience:** Editors and researchers, specifically data scientists and statisticians, whose publications focus on formulas, have extensive reference lists, or are generally more scientific or math based. 
