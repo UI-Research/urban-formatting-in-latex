@@ -1,6 +1,6 @@
 # How-to Guides
 
-This directory contains resources and "How to Guides" on editing the LaTeX files.
+This directory contains resources and "How-to Guides" on how to make LaTeX documents, editing LaTeX files, and becoming familiar with Overleaf.
 
 ## Guides
 (to be added in 2022)
@@ -13,7 +13,7 @@ The following are resources we found helpful for those learning to use LaTeX and
 
 ### LaTeX for Beginners
 - [Learn LaTeX in 30 minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) - by Overleaf
-- [LaTeX video tutorial for beginners](https://www.overleaf.com/learn/latex/LaTeX_video_tutorial_for_beginners_(video_1)) - by Overleaf (**Note:** Overleaf made this series in 2013. Content is good, but the interface is dated.)
+- [LaTeX video tutorial for beginners](https://www.overleaf.com/learn/latex/LaTeX_video_tutorial_for_beginners_(video_1)) - by Overleaf (**Note:** Overleaf made this series in 2013. Content is good, but the interface is old.)
 
 ### Overleaf
 - [Overleaf Tutorial for Beginners | Latex Overleaf Tutorial](https://www.youtube.com/watch?v=_PzDLFJHO3E) - video by Electrical Lectures (video made March 22, 2021)
