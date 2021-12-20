@@ -6,8 +6,7 @@ This repository is for the LaTeX files that are in the Urban approved format.
 
 * Research Report
 * White Paper
-* How-to Guides (more will be added)
-	- 
+* How-to Guides and Resources
 
 ## Original Seed Grant Proposal
 **Team:** Alexandra Tammaro (COMMS) and Claire McKay Bowen (LHP)
