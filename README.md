@@ -1,15 +1,25 @@
 # Urban Formatting in LaTeX
 
+**Team:** Alexandra Tammaro (COMMS) and Claire McKay Bowen (LHP)
+
 This repository is for the LaTeX files that are in the Urban approved format.
 
 ## Repository Contents
 
-* Research Report
-* White Paper
-* How-to Guides and Resources
+* Research Report - a directory that contains the files for creating the Urban Institute Research Report in LaTeX.
+* White Paper - a directory that contains the files for creating the Urban Institute White Paper in LaTeX.
+* How-to Guides and Resources - a directory that contains resources and "How-to Guides" on how to make LaTeX documents, editing LaTeX files, and becoming familiar with Overleaf.
+
+## Elevator Pitch
+Why is use LaTeX versus Word?
+
+**Comms:**
+"LaTeX is online, code-based software that allows for greater reach for our more scientific- and math-based publications, not only in terms of researchers being able to produce them--and time-saving measures in writing and editing citation-heavy products--but also in that it's an industry favorite for academic publishing."
+
+**Tech and Data:**
+"An Urban-branded LaTeX template allows for greater collaboration across sectors and stakeholders, including other research organizations, as well as for greater reach for Urban researchers' more scientific- and math-based publications. STEM-oriented research favors LaTeX for publishing, and by having an Urban-branded product, we show we're meeting an industry standard."
 
 ## Original Seed Grant Proposal
-**Team:** Alexandra Tammaro (COMMS) and Claire McKay Bowen (LHP)
 
 - **Motivation:** When creating Urban reports in Word, copyeditors spend a lot of time to ensure the correct document style, text formatting, table structures, figure placements, and references are used. For highly technical, heavily referenced papers, Word can be cumbersome, quickly becoming unwieldy and elongating timelines.
 - **Objective:** We propose to create Urban formatting in LaTeX, an open-source software system for various documentation, which is widely used in academia for communication and publication of scientific documents.
