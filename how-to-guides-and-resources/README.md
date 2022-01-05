@@ -5,11 +5,11 @@ We recommend you read the guides and watch the videos provided below.
 
 ## Guides
 
+- How to copyedit in LaTeX?
+	- See the PDF in this directory titled, ``How to Copyedit in LaTeX?''
 - How to add content to the Urban templates?
 	- [White Paper](https://urbanorg.box.com/s/fddmwh4e9bz9bbqdntc43fep1r7u6xe5) - video on adding and editing content in the White Paper format
 	- [Research Report](https://urbanorg.box.com/s/iqqyf1wpawuqsumx9do2lspeq0bz7qop) - video on adding and editing content in the Research Report format
-- How to copyedit in LaTeX?
-	- See the PDF in this directory titled, ``How to Copyedit in LaTeX?''
 
 ## Resources
 
