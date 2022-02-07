@@ -1,6 +1,6 @@
 # Urban Formatting in LaTeX
 
-**Team:** Alexandra Tammaro (COMMS) and Claire McKay Bowen (LHP)
+**Team:** Alexandra Tammaro (COMMS) and Claire McKay Bowen (LHP/SMG/TECH)
 
 This repository is for the LaTeX files that are in the Urban approved format.
 
